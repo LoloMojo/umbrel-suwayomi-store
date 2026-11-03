@@ -33,6 +33,18 @@ Suwayomi-umbrel/
 
 > Published from https://github.com/LoloMojo/umbrel-suwayomi-store
 
+## One-time permission fix (required for the app to start)
+
+Suwayomi's image runs as UID 1000. After install, if the app shows in Umbrel as
+"ready" but won't open (0 MB memory, connection refused), the data folder isn't
+writable by the container. Over SSH on the Umbrel box run:
+
+```bash
+sudo chown -R 1000:1000 /home/umbrel/umbrel/app-data/manga-suwayomi/data
+```
+
+Then Restart the app from the umbrelOS homescreen.
+
 ## First-run setup
 
 1. Open the app → **Browse → Extensions**, install the manga sources you want.
