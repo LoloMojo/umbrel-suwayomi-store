@@ -158,9 +158,12 @@ On your Umbrel:
 2. On the left, go to **Browse → Extensions**.
 3. Click **Settings** (near Extensions), and under *Extension sources* make
    sure the default source (Keiyoushi / Tachiyomi) is enabled. If the list is
-   empty, click **Add**, paste the default repo
-   `https://raw.githubusercontent.com/keiyoushi/extensions/repo.index` — or
-   whichever source you set in the YouTube tutorial — and confirm.
+   empty, click **Add** and paste the source repo
+   `https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json` — or
+   whichever source you set in the YouTube tutorial — and confirm. (The old
+   `.../extensions/repo.index` URL no longer exists and returns a 404; if you see
+   "HTTP error 404" when adding a source, delete the dead entry and re-add with
+   the `index.min.json` URL above.)
 4. Back on **Extensions**, install the manga sources you want (e.g. MangaDex).
 5. Go to **Browse** → pick a source → search/add manga → read.
 

@@ -47,7 +47,11 @@ Then Restart the app from the umbrelOS homescreen.
 
 ## First-run setup
 
-1. Open the app → **Browse → Extensions**, install the manga sources you want.
+1. Open the app → **Browse → Extensions**. If the extension-source list is
+   empty, under **Settings** add the source
+   `https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json`
+   (the old `repo.index` URL is gone and returns 404), then install the manga
+   sources you want.
 2. (Optional) Add Mihon/Tachiyomi on your phone pointing at your Umbrel —
    Suwayomi serves a Tachiyomi-compatible API automatically.
 
