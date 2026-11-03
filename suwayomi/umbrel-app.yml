@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: manga-suwayomi
+name: Suwayomi
+tagline: Self-hosted manga reader and downloader server
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/suwayomi.svg
+category: media
+version: "0.1.0"
+port: 4567
+description: >-
+  Suwayomi (formerly Tachidesk) is a free and open-source manga reader
+  server. It runs the same extensions as the Mihon / Tachiyomi mobile apps,
+  so you can browse and search hundreds of sources, build a library,
+  download chapters for offline reading, and read in your browser from any
+  device on your network — including a companion Mihon/Tachiyomi app pointing
+  at your server.
+
+  Setup after install: open the app, go to Browse > Extensions, install the
+  sources you want, then search and start reading.
+
+developer: Suwayomi
+website: https://suwayomi.github.io/
+submitter: LoloMojo
+submission: https://github.com/LoloMojo/umbrel-suwayomi-store
+repo: https://github.com/Suwayomi/Suwayomi-Server
+support: https://github.com/Suwayomi/Suwayomi-Server/issues
+gallery:
+  - https://cdn.jsdelivr.net/gh/selfhst/icons/png/suwayomi.png
+releaseNotes: >-
+  Initial release.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
