@@ -4,7 +4,7 @@ name: Suwayomi
 tagline: Self-hosted manga reader and downloader server
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/suwayomi.svg
 category: media
-version: "0.1.0"
+version: "0.1.1"
 port: 4567
 description: >-
   Suwayomi (formerly Tachidesk) is a free and open-source manga reader
@@ -26,7 +26,7 @@ support: https://github.com/Suwayomi/Suwayomi-Server/issues
 gallery:
   - https://cdn.jsdelivr.net/gh/selfhst/icons/png/suwayomi.png
 releaseNotes: >-
-  Initial release.
+  Fix app_proxy APP_HOST container name so install succeeds.
 dependencies: []
 path: ""
 defaultUsername: ""
