@@ -20,7 +20,7 @@ What each piece does:
 
 | Piece | What it is |
 |---|---|
-| `suwayomi/` folder | The app package (manifest + docker-compose + icon) |
+| `manga-suwayomi/` folder | The app package (manifest + docker-compose + icon) |
 | `umbrel-app-store.yml` | Says "this GitHub repo is a store" (our store id: `manga`) |
 | GitHub | Free place to host the repo; Umbrel reads it from there |
 | umbrelOS | The server OS; it reads the store, downloads the app's Docker image, and runs it |
@@ -82,19 +82,19 @@ Two ways. **Method 1 (no installs, all in the browser)** is what I'd start with.
    ```
    umbrel-app-store.yml
    README.md
-   suwayomi/
+   manga-suwayomi/
      umbrel-app.yml
      docker-compose.yml
      icon.svg
      icon.png
    ```
    (Dragging a folder preserves the sub-folder. If you only see the files,
-   re-create the `suwayomi/` folder and put those four files inside it.)
+   re-create the `manga-suwayomi/` folder and put those four files inside it.)
 9. Click **Commit changes**.
 10. Your repo URL is now:
     `https://github.com/YOUR-USERNAME/umbrel-suwayomi-store` — copy it.
 
-> **Before publishing**, open `suwayomi/umbrel-app.yml` and replace the
+> **Before publishing**, open `manga-suwayomi/umbrel-app.yml` and replace the
 > placeholders `[YOUR NAME]`, `[YOUR-USERNAME]`, `[YOUR-STORE-REPO]` with your
 > real values. You can edit files right on GitHub (click the file → pencil
 > icon → edit → Commit changes).
@@ -171,7 +171,7 @@ server (settings → browse → sources) to read on your phone too.
 
 ## Part F — Update the app when a new Suwayomi version arrives
 
-1. Open `suwayomi/umbrel-app.yml` (edit on GitHub, or locally then re-push).
+1. Open `manga-suwayomi/umbrel-app.yml` (edit on GitHub, or locally then re-push).
 2. Bump `version` (e.g. `0.1.0` → `0.1.1`) and write a short note in
    `releaseNotes`.
 3. Commit + push.
@@ -201,7 +201,7 @@ is easier.
 ## Checklist before you publish to GitHub
 
 - [ ] `umbrel-app-store.yml` at repo root (id: `manga`)
-- [ ] `suwayomi/` folder with `umbrel-app.yml` + `docker-compose.yml` + icons
+- [ ] `manga-suwayomi/` folder with `umbrel-app.yml` + `docker-compose.yml` + icons
 - [ ] placeholders in `umbrel-app.yml` replaced with your real name/repo
 - [ ] repo is **Public**
 - [ ] you have an actual Umbrel device (Raspberry Pi 5 / x86) to run it on

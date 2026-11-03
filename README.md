@@ -8,7 +8,7 @@ Umbrel app package for **Suwayomi**, the self-hosted manga reader server
 ```
 Suwayomi-umbrel/
 ├── umbrel-app-store.yml      # community-store manifest (id: manga)
-└── suwayomi/                 # the app package
+└── manga-suwayomi/           # the app package (folder name MUST match app id)
     ├── umbrel-app.yml        # app metadata shown in the umbrelOS UI
     ├── docker-compose.yml    # runs ghcr.io/suwayomi/suwayomi-server:stable
     ├── icon.svg              # downloaded from selfh.st/icons
@@ -19,7 +19,7 @@ Suwayomi-umbrel/
   boxes and Raspberry Pi / ARM installs.
 - Port **4567** is the web UI (opened through Umbrel's auth proxy).
 - Data is persisted to Umbrel's app data dir at
-  `~/.umbrel/app-data/suwayomi/data/` (library, downloads, settings, backups).
+  `~/.umbrel/app-data/manga-suwayomi/data/` (library, downloads, settings, backups).
 
 ## Installing
 
@@ -42,5 +42,5 @@ Suwayomi-umbrel/
 ## Updating
 
 When the image updates, bump `version` and fill in `releaseNotes` in
-`suwayomi/umbrel-app.yml`. For reproducibility you can pin a specific digest
+`manga-suwayomi/umbrel-app.yml`. For reproducibility you can pin a specific digest
 instead of `stable`, but then you must update it each release.
